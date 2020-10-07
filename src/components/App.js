@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 // TASK 1 - import the axios lib from node_modules
 import axios from 'axios'
 // TASK 2 - import the constants from constants/index.js
@@ -9,6 +9,8 @@ import Details from './Details'
 export default function App() {
   const [friends, setFriends] = useState([])
   const [currentFriendId, setCurrentFriendId] = useState(null)
+
+  
 
   const openDetails = id => {
     setCurrentFriendId(id)
