@@ -32,8 +32,17 @@ export default function App() {
           debugger
         })
     }
-
     fetchFriends()
+    // const fetchFriends = () => {
+    //   axios.get(`${BASE_URL}/friends?api_key=${API_KEY}`)
+    //     .then(res => {
+    //       setFriends(res.data)
+    //     })
+    //     .catch(err => {
+    //       debugger
+    //     })
+    // }
+
   }, [])
 
   const Friend = (props) => (
