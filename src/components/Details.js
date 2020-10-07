@@ -48,12 +48,12 @@ export default function Details(props) {
     // caused by a change in friendId
     axios.get(`${BASE_URL}/friends/${friendId}?api_key=${API_KEY}`)
       .then(res => {
-
+        setDetails(res.data)
       })
       .catch(err => {
         debugger
       })
-  }, [friendId])
+  }, [])
 
   console.log('***** RENDERING! *****')
 
