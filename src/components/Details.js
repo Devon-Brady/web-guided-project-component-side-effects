@@ -46,7 +46,13 @@ export default function Details(props) {
   useEffect(() => {
     // this runs after first render for sure, and then after every render+domSurgery
     // caused by a change in friendId
-    axios.get(`${BASE_URL}/friends`)
+    axios.get(`${BASE_URL}/friends/${friendId}?api_key=${API_KEY}`)
+      .then(res => {
+
+      })
+      .catch(err => {
+        debugger
+      })
   }, [friendId])
 
   console.log('***** RENDERING! *****')
