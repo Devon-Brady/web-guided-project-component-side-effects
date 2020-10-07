@@ -21,7 +21,7 @@ export default function Details(props) {
   useEffect(() => {
     // "dirty" thing
     const listener = evt => {
-      console.log(`Here is a random number ${Math.random()}`)
+      // console.log(`Here is a random number ${Math.random()}`)
     }
     document.addEventListener('click', listener)
 
