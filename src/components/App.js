@@ -41,6 +41,10 @@ export default function App() {
         })
     }
     fetchFriends()
+
+    return () => {
+      // not worth it in this case, probably
+    }
   }, [])
 
   const Friend = (props) => (
