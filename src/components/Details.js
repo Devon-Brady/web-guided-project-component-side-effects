@@ -19,7 +19,9 @@ export default function Details(props) {
   // and puts a 'click' event handler on document.
   // See what happens if we don't clean up.
   useEffect(() => {
-    const listener = evt => 
+    const listener = evt => {
+      console.log(`Here is a random number ${Math.random()}`)
+    }
   }, [])
 
   // TASK 6 - Create a side effect 🥵 that runs after every render.
