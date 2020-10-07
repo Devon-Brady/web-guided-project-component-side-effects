@@ -33,7 +33,7 @@ export default function Details(props) {
 
   // TASK 6 - Create a side effect 🥵 that runs after every render.
   useEffect(() => {
-    
+    console.log(`🥵 runs after first render+DOMsurgery and all othres too`)
   })
 
   // TASK 7 - Create a side effect 📲 that runs when a particular variable changes:
