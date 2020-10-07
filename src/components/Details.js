@@ -53,7 +53,7 @@ export default function Details(props) {
       .catch(err => {
         debugger
       })
-  }, [])
+  }, [friendId])
 
   console.log('***** RENDERING! *****')
 
