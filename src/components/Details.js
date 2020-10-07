@@ -11,7 +11,7 @@ export default function Details(props) {
     console.log(`🥇 EFFECT ONLY AFTER FIRST RENDER+DOM SURGERY`)
 
     return () => {
-      console.log(`🥇 `)
+      console.log(`🥇 CLEANUP RIGHT BEFORE COMPONENT IS REMOVED FROM DOM`)
     }
   }, [])
 
