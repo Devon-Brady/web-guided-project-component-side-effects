@@ -17,8 +17,6 @@ export default function App() {
     setCurrentFriendId(null)
   }
 
-  axios.get('http://localhost:4000/friends?api_key=xyz').then().catch()
-
   // TASK 3 - make an effect that runs after FIRST DOM surgery
   // caused by the first render only. You'll need `useEffect` from React.
   // The effect should consist of a call to the API using axios.
