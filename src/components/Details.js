@@ -44,7 +44,8 @@ export default function Details(props) {
   // The URL should end up looking like `http://localhost:4000/friends/1?api_key=xyz`
   // On success, shove the details of the friend in `details` slice of state
   useEffect(() => {
-    // this runs after first render for sure, and then after every render+dom
+    // this runs after first render for sure, and then after every render+domSurgery
+    // caused by a change in friendId
   }, [friendId])
 
   console.log('***** RENDERING! *****')
